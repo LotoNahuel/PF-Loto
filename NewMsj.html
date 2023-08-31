@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MENSAJE</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <nav class="nav__complet"> 
+        <ul>
+            <div class="nav__izq">
+                <li>
+                    <a href="index.html">
+                        <img src="static/assests/img/3.png" alt="logo">
+                    </a>
+                </li>
+            </div>
+            <div class="nav__der">
+                <li id="desktop">
+                    <a href="crear_post.html" class="nav">CREAR POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="posts.html" class="nav">POST</a>
+                </li>
+                <div id="desktop" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><img src="static/assests/56763.png" alt=""></button>
+                    
+                    <div class="dropdown-content">
+                        <li><a href="perfil.html">
+                            <img src="static/assests/avatar/avatar-default.png" alt="">
+                        </a></li>
+                        <li>
+                            <a href="msj.html" class="nav">Mensajes</a>
+                        </li>
+                        <li><a href="creation_perfil.html">Editar Perfil</a></li>
+                    </div>
+                </div>
+                <div id="mobileVist" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><img src="static/assests/56763.png" alt=""></button>
+                    
+                    <div class="dropdown-content">
+                        <li><a href="perfil.html">
+                            <img src="static/assests/avatar/avatar-default.png" alt="">
+                        </a></li>
+                        <li>
+                            <a href="crear_post.html" class="nav">CREAR POST</a>
+                        </li>
+                        <li>
+                            <a href="posts.html" class="nav">POST</a>
+                        </li>
+                        <li>
+                            <a href="msj.html" class="nav">Mensajes</a>
+                        </li>
+                        <li><a href="creation_perfil.html">Editar Perfil</a></li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <section id="new__msj">
+        <h4>NUEVO MENSAJE</h4>
+        <form class="form__msj">
+            <div class="col-auto form__user">
+                <label class="sr-only" for="inlineFormInputGroup"></label>
+                <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                    </div>
+                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                </div>
+            </div>
+            <div class="form__msjTxt">
+                <div>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Nuevo mensaje..."></textarea>
+                </div>
+                </div>
+                    <a href="msj.html">
+                        <button type="submit" class="btn btn-primary">ENVIAR</button>
+                    </a>
+                </div>
+            </div>
+        </form>
+    </section>
+    
+    <footer class="foot__complet foot__form">
+        <div class="foot__left">
+            <h3>Contactos:</h3>
+            <p>Por cualquier duda o consulta, envienos un mensaje</p>
+            <h4>Email: R-3D@gmail.com</h4>
+            <p>Tambien puede llenar el formulario y nosotros
+                responederemos su consulta a la brebedad
+            </p>
+            <li>
+                <a href="contact.html">Centro de ayuda</a>
+            </li>
+        </div>
+        <div class="foot__right">
+            <a href="index.html" class="logo_2">
+                <img src="static/assests/img/3.png" alt="logo">
+            </a>
+            <li>
+                <a href="about.html">Sobre nosotros</a>
+            </li>
+        </div>
+    </footer>
+</body>
+
+<script src="static/js/bootstrap.js"></script>
+
+</html>

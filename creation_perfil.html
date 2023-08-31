@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATION OR EDIT PERFIL</title>
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <nav class="nav__complet"> 
+        <ul>
+            <div class="nav__izq">
+                <li>
+                    <a href="index.html">
+                        <img src="static/assests/img/3.png" alt="logo">
+                    </a>
+                </li>
+            </div>
+            <div class="nav__der">
+                <li id="desktop">
+                    <a href="crear_post.html" class="nav">CREAR POST</a>
+                </li>
+                <li id="desktop">
+                    <a href="posts.html" class="nav">POST</a>
+                </li>
+                <div id="desktop" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><img src="static/assests/56763.png" alt=""></button>
+                    
+                    <div class="dropdown-content">
+                        <li><a href="perfil.html">
+                            <img src="static/assests/avatar/avatar-default.png" alt="">
+                        </a></li>
+                        <li>
+                            <a href="msj.html" class="nav">Mensajes</a>
+                        </li>
+                        <li><a href="creation_perfil.html">Editar Perfil</a></li>
+                    </div>
+                </div>
+                <div id="mobileVist" class="dropdown" style="float:right;">
+                    <button type="button" class="btn btn-link dropbtn"><img src="static/assests/56763.png" alt=""></button>
+                    
+                    <div class="dropdown-content">
+                        <li><a href="perfil.html">
+                            <img src="static/assests/avatar/avatar-default.png" alt="">
+                        </a></li>
+                        <li>
+                            <a href="crear_post.html" class="nav">CREAR POST</a>
+                        </li>
+                        <li>
+                            <a href="posts.html" class="nav">POST</a>
+                        </li>
+                        <li>
+                            <a href="msj.html" class="nav">Mensajes</a>
+                        </li>
+                        <li><a href="creation_perfil.html">Editar Perfil</a></li>
+                    </div>
+                </div>
+            </div>
+        </ul>
+    </nav>
+
+    <section id="form__editPerfil">
+        <form>
+            <div class="class__header">
+                <h3>Foto del perfil</h3>
+                <div class="class__head">
+                    <a href="static/assests/avatar/avatar-default.png">
+                        <img src="static/assests/avatar/avatar-default.png" class="img-fluid" alt="avatar">
+                    </a>
+                    <label for="formFileLg" class="form-label"></label>
+                    <input class="form-control form-control-lg" id="formFileLg" type="file">
+                </div>
+            </div>
+            <div class="class__data">
+                <h3>Datos personales</h3>
+                <div class="form-group data__inf">
+                    <h4>Nombre y apellido:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Nombre de usuario:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Email:</h4>
+                    <label for="exampleFormControlInput1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="name@example.com"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Contraseña:</h4>
+                    <label for="exampleFormControlInput1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1" placeholder="*********"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Nro. telefono:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Fecha de nacimiento:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Estudios:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                </div>
+                <div class="form-group data__inf">
+                    <h4>Descripcion:</h4>
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="classBtn">
+                <button type="submit" class="btn btn-primary">GUARDAR</button>
+            </div>
+          </form>
+    </section>
+    
+    <footer class="foot__complet">
+        <div class="foot__left">
+            <h3>Contactos:</h3>
+            <p>Por cualquier duda o consulta, envienos un mensaje</p>
+            <h4>Email: R-3D@gmail.com</h4>
+            <p>Tambien puede llenar el formulario y nosotros
+                responederemos su consulta a la brebedad
+            </p>
+            <li>
+                <a href="contact.html">Centro de ayuda</a>
+            </li>
+        </div>
+        <div class="foot__right">
+            <a href="index.html" class="logo_2">
+                <img src="static/assests/img/3.png" alt="logo">
+            </a>
+            <li>
+                <a href="about.html">Sobre nosotros</a>
+            </li>
+        </div>
+    </footer>
+</body>
+
+<script src="static/js/bootstrap.js"></script>
+
+</html>
