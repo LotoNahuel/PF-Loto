@@ -52,6 +52,8 @@ ul {
 }
 .nav__der img {
   width: 50px;
+  border-radius: 100%;
+  background-color: #fff;
 }
 .nav__der a {
   font-size: 30px;
