@@ -305,15 +305,16 @@ ul{
 }
 .right__info{
     padding: 50px;
+    width: 50%;
     p{
         font-size: 18px;
+        text-align: justify;
         margin: 0;
-        width: 50%;
     }
     @media (min-width: $maxWidth-Mobile){
         padding: 5px;
         p{
-            width: 100%;
+            width: 120%;
         }
     }
     @media (max-width: $maxWidth-Mobile){
@@ -325,7 +326,7 @@ ul{
             font-size: 18px;
         }
         p{
-            width: 90%;
+            width: 130%;
             text-align: justify;
             font-size: 15px;
         }
@@ -338,7 +339,7 @@ ul{
             font-size: 13px;
         }
         p{
-            width: 90%;
+            width: 130%;
             text-align: justify;
             font-size: 11px;
         }
@@ -380,12 +381,16 @@ ul{
     }
     @media (min-width: $maxWidth-Mobile) and (max-width:1200px){
         display: grid;
-        grid-template-columns: repeat(2, 1fr); 
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 15px;
+        margin-block-end: 15px;
     }
     @media (max-width: $maxWidth-Mobile){
         display: grid;
         grid-template-columns: 1fr;
         margin: 1px;
+        margin-top: 15px;
+        margin-block-end: 15px;
         h3{
             font-size: 20px;
         }
@@ -443,6 +448,7 @@ ul{
 .post_1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 15px;
 }
 .post_2{
     width: 900px;
@@ -465,17 +471,14 @@ ul{
     margin-left: 15px;
 }
 .class__form textarea{
-    margin-block-end: 5px;
+    margin-block-end: 15px;
     border-radius: 15px;
 }
 .coment_style{
     padding-left: 1px;
 }
-.add_coment{
-    margin-top: -10px;
-}
 .scroll-container{
-    height: 450px;
+    height: 470px;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }

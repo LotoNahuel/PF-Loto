@@ -339,18 +339,19 @@ ul {
 
 .right__info {
   padding: 50px;
+  width: 50%;
 }
 .right__info p {
   font-size: 18px;
+  text-align: justify;
   margin: 0;
-  width: 50%;
 }
 @media (min-width: 720px) {
   .right__info {
     padding: 5px;
   }
   .right__info p {
-    width: 100%;
+    width: 120%;
   }
 }
 @media (max-width: 720px) {
@@ -364,7 +365,7 @@ ul {
     font-size: 18px;
   }
   .right__info p {
-    width: 90%;
+    width: 130%;
     text-align: justify;
     font-size: 15px;
   }
@@ -377,7 +378,7 @@ ul {
     font-size: 13px;
   }
   .right__info p {
-    width: 90%;
+    width: 130%;
     text-align: justify;
     font-size: 11px;
   }
@@ -426,6 +427,8 @@ ul {
   .container__art {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    margin-top: 15px;
+    margin-block-end: 15px;
   }
 }
 @media (max-width: 720px) {
@@ -433,6 +436,8 @@ ul {
     display: grid;
     grid-template-columns: 1fr;
     margin: 1px;
+    margin-top: 15px;
+    margin-block-end: 15px;
   }
   .container__art h3 {
     font-size: 20px;
@@ -495,6 +500,7 @@ ul {
 .post_1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 15px;
 }
 
 .post_2 {
@@ -523,7 +529,7 @@ ul {
 }
 
 .class__form textarea {
-  margin-block-end: 5px;
+  margin-block-end: 15px;
   border-radius: 15px;
 }
 
@@ -531,12 +537,8 @@ ul {
   padding-left: 1px;
 }
 
-.add_coment {
-  margin-top: -10px;
-}
-
 .scroll-container {
-  height: 450px;
+  height: 470px;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
