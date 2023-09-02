@@ -6,6 +6,11 @@
     <title>INDEX</title>
     <link rel="stylesheet" href="/static/css/bootstrap.css">
     <link rel="stylesheet" href="/static/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
     <nav class="nav__complet"> 
@@ -59,33 +64,33 @@
             </div>
         </ul>
     </nav>
-
+    
     <article class="art__complet">
-        <div class="art__left">
+        <div class="art__left" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
             <h1>BIENVENIDO A</h1>
         </div>
-        <div class="art__right">
+        <div class="art__right" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="900">
             <img src="/static/assests/img/3.png" alt="portada">
         </div>
     </article>
 
     <section class="showcase class__section">
         <div class="container-fluid p-0">
-            <div class="row g-0 section__art">
+            <div class="row g-0 section__art" data-aos="fade-up" data-aos-duration="3000">
                 <img class="col-lg-6 order-lg-2 text-white showcase-img" src="/static/assests/img/Anotación 2023-05-04 213458.jpg"></img>
                 <div class="col-lg-6 order-lg-1 my-auto showcase-text class__txt">
                     <h2>Tu lugar para compartir</h2>
                     <p class="lead mb-0">Somos la primera pagina donde nos sentramos en el renderizado, podras subir y encontrar todo tipo de Modelos 3D renderizads. Hasta podras recibir encargos por privado por parte de la comunidad</p>
                 </div>
             </div>
-            <div class="row g-0 section__art">
+            <div class="row g-0 section__art" data-aos="fade-up" data-aos-duration="3000">
                 <img class="col-lg-6 text-white showcase-img" src="/static/assests/img/advanced_animation.96.png"></img>
                 <div class="col-lg-6 my-auto showcase-text class__txt">
                     <h2>Proyectos y Porfolio</h2>
                     <p class="lead mb-0">Podras subir tus proyectos de la Universidad, ademas compartiendo tu perfil podran visualizar tus proyectos o trabajos que te servira como porfolio.</p>
                 </div>
             </div>
-            <div class="row g-0 section__art">
+            <div class="row g-0 section__art" data-aos="fade-up" data-aos-duration="3000">
                 <iframe
                         width="900"
                         height="500"
@@ -129,5 +134,9 @@
 </body>
 
 <script src="/static/js/bootstrap.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 </html>
