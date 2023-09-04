@@ -427,13 +427,26 @@ ul{
 /*PAGE POST*/
 .img_post img{
     border-radius: $borderRadius;
-    width: 900px;
 }
 .container__post{
     display: flex;
     flex-direction: column;
     margin: 100px;
     margin-block-end: 50px;
+    @media (max-width:$maxWidth-Mobile){
+        margin: 15px;
+        margin-top: $mobileTop;
+    }
+    @media (min-width:$maxWidth-Mobile) and (max-width:900px){
+        margin: 15px;
+        margin-top: 80px;
+        margin-block-end: 45px;
+    }
+    @media (min-width:900px) and (max-width:1000px){
+        margin: 35px;
+        margin-top: 80px;
+        margin-block-end: 45px;
+    }
 }
 .avatar_user{
     display: flex;
@@ -447,6 +460,7 @@ ul{
     h3{
         margin-left: 15px;
     }
+
 }
 .txt_post{
     margin: 20px;
@@ -454,20 +468,30 @@ ul{
         margin: 0;
         width: 100%;
     }
+    @media (max-width:$maxWidth-Mobile){
+        margin: 15px;
+        p{
+            text-align: justify;
+        }
+    }
 }
 .post_1{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 15px;
+    @media (max-width:$maxWidth-Mobile){
+        display: flex;
+        flex-direction: column;
+    }
 }
 .post_2{
-    width: 900px;
     border-radius: $borderRadius;
-    background-color: rgb(11, 55, 122);
+    background-color: rgb(27, 32, 39);
+
 }
 .coment_style{
     border-radius: $borderRadius;
-    background-color: rgb(11, 55, 122);
+    background-color: rgb(27, 32, 39);
 }
 .title_coment{
     padding-left: 15px;
@@ -488,9 +512,18 @@ ul{
     padding-left: 1px;
 }
 .scroll-container{
-    height: 470px;
+    height: 430px;
     overflow-y: scroll;
     scroll-behavior: smooth;
+    @media (max-width:$maxWidth-Mobile){
+        height: 250px;
+    }
+    @media (min-width:$maxWidth-Mobile) and (max-width:900px){
+        height: 300px;
+    }
+    @media (min-width:900px) and (max-width:1200px){
+        height: 300px;
+    }
 }
 
 /*CREATION POST*/
