@@ -309,7 +309,7 @@ ul {
 
 /*PERFIL*/
 .class__container {
-  background-color: rgb(1, 7, 14);
+  background-color: rgb(20, 20, 20);
   margin-top: 80px;
   display: flex;
   align-items: center;
@@ -430,6 +430,11 @@ ul {
 .container__art p {
   font-size: 18px;
   margin: 0;
+  margin-right: 20px;
+  text-align: justify;
+  white-space: nowrap;
+  width: 350px;
+  overflow: hidden;
 }
 @media (min-width: 720px) and (max-width: 1200px) {
   .container__art {
@@ -453,6 +458,8 @@ ul {
   .container__art p {
     font-size: 15px;
     margin: 0;
+    margin-right: 20px;
+    width: 300px;
   }
 }
 
@@ -470,6 +477,10 @@ ul {
   margin: 10px;
 }
 
+.right__info p {
+  text-overflow: ellipsis;
+}
+
 /*PAGE POST*/
 .img_post img {
   border-radius: 15px;
@@ -485,6 +496,9 @@ ul {
   .container__post {
     margin: 15px;
     margin-top: 50px;
+  }
+  .container__post p {
+    font-size: 15px;
   }
 }
 @media (min-width: 720px) and (max-width: 900px) {

@@ -283,7 +283,7 @@ ul{
 
 /*PERFIL*/
 .class__container{
-    background-color: rgb(1, 7, 14);
+    background-color: rgb(20, 20, 20);
     margin-top: $desktopTop;
     display: flex;
     align-items: center;
@@ -388,6 +388,11 @@ ul{
     p{
         font-size: 18px;
         margin: 0;
+        margin-right: 20px;
+        text-align: justify;
+        white-space: nowrap;
+        width: 350px;
+        overflow: hidden;
     }
     @media (min-width: $maxWidth-Mobile) and (max-width:1200px){
         display: grid;
@@ -407,9 +412,10 @@ ul{
         p{
             font-size: 15px;
             margin: 0;
+            margin-right: 20px;
+            width: 300px;
         }
     }
-    
 }
 .container__pub{
     background-color: rgb(27, 32, 39);
@@ -422,6 +428,9 @@ ul{
 .inf__art{
     padding-left: 20px;
     margin: 10px;
+}
+.right__info p{
+    text-overflow: ellipsis;
 }
 
 /*PAGE POST*/
@@ -436,6 +445,9 @@ ul{
     @media (max-width:$maxWidth-Mobile){
         margin: 15px;
         margin-top: $mobileTop;
+        p{
+            font-size: 15px;
+        }
     }
     @media (min-width:$maxWidth-Mobile) and (max-width:900px){
         margin: 15px;
