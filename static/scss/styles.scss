@@ -7,6 +7,13 @@ $MarginTopOrEnd: 15px;
 $borderRadiusAvatar: 100%;
 $solidBorder: solid 5px rgb(255, 255, 255);
 
+a:hover{
+    img{
+        overflow: hidden;
+        transform: scale(1.1);
+    }
+}
+
 body{
     margin: 0;
     padding: 0;
