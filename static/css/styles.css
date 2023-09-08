@@ -1,4 +1,4 @@
-/*TRANSFORM IMG LINK*/
+/*ANIMACION IMG LINK*/
 a:hover img {
   overflow: hidden;
   transform: scale(1.1);
@@ -1092,6 +1092,44 @@ ul {
   .helpContact {
     margin-block-end: 10px;
   }
+}
+
+/*CHAT*/
+.userChat img {
+  margin-right: 15px;
+}
+
+.userChatLeft {
+  display: flex;
+  align-items: start;
+  margin: 15px;
+  padding: 10px;
+  background-color: rgba(18, 38, 90, 0.6039215686);
+  border-radius: 15px;
+}
+.userChatLeft img {
+  margin-right: 15px;
+}
+.userChatLeft p {
+  text-align: justify;
+  max-width: 800px;
+}
+
+.userChatRight {
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  margin: 15px;
+  padding: 10px;
+  background-color: rgba(18, 38, 90, 0.6039215686);
+  border-radius: 15px;
+}
+.userChatRight img {
+  margin-left: 15px;
+}
+.userChatRight p {
+  text-align: justify;
+  max-width: 800px;
 }
 
 /*# sourceMappingURL=styles.css.map */
