@@ -1000,3 +1000,19 @@ ul{
         max-width: 800px;
     }
 }
+.input__chat{
+    margin: 15px;
+    padding: 10px;
+    margin-top: -110px;
+    textarea{
+        border-radius: 15px;
+    }
+}
+.btnChat{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 15px;
+    padding: 10px;
+    margin-top: -30px;
+}
