@@ -7,12 +7,14 @@ $MarginTopOrEnd: 15px;
 $borderRadiusAvatar: 100%;
 $solidBorder: solid 5px rgb(255, 255, 255);
 
+/*TRANSFORM IMG LINK*/
 a:hover{
     img{
         overflow: hidden;
         transform: scale(1.1);
     }
 }
+
 
 body{
     margin: 0;
@@ -28,6 +30,14 @@ li, a, h1, h2, h3, h4, p{
 
 
 /*STYLE NAV*/
+.nav__complet{
+    li{
+        a:hover{
+            overflow: hidden;
+            transform: scale(1.2);
+        }
+    }
+}
 ul{
     background-color: rgba(43, 43, 43, 0.493);
     top: 0;
@@ -286,7 +296,6 @@ ul{
 .aboutPage{
     margin-top: 95px;
 }
-
 
 /*PERFIL*/
 .class__container{
@@ -751,7 +760,7 @@ ul{
 }
 
 /*EDIT PERFIL*/
-#form__editPerfil{
+#form__editPerfilAndContact{
     padding: 100px;
     img{
         width: 200px;
@@ -931,5 +940,25 @@ ul{
         input{
             width: 150px;
         }
+    }
+}
+
+/*CONTACT*/
+.helpContact{
+    margin-top: 15px;
+    margin-block-end: -55px;
+    h2{
+        margin-block-end: 25px;
+        border-bottom:$solidBorder;
+    }
+    h3{
+        margin-block-end: 25px;
+        border-bottom:$solidBorder;
+    }
+    p{
+        text-align: justify;
+    }
+    @media (max-width:$maxWidth-Mobile){
+        margin-block-end: 10px;
     }
 }

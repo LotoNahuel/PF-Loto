@@ -1,3 +1,9 @@
+/*TRANSFORM IMG LINK*/
+a:hover img {
+  overflow: hidden;
+  transform: scale(1.1);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -12,6 +18,11 @@ li, a, h1, h2, h3, h4, p {
 }
 
 /*STYLE NAV*/
+.nav__complet li a:hover {
+  overflow: hidden;
+  transform: scale(1.2);
+}
+
 ul {
   background-color: rgba(43, 43, 43, 0.493);
   top: 0;
@@ -863,25 +874,25 @@ ul {
 }
 
 /*EDIT PERFIL*/
-#form__editPerfil {
+#form__editPerfilAndContact {
   padding: 100px;
 }
-#form__editPerfil img {
+#form__editPerfilAndContact img {
   width: 200px;
   border-radius: 100%;
   background-color: white;
 }
-#form__editPerfil button {
+#form__editPerfilAndContact button {
   margin-top: 50px;
   height: 50px;
   width: 200px;
 }
 @media (max-width: 720px) {
-  #form__editPerfil {
+  #form__editPerfilAndContact {
     padding: 15px;
     margin-top: 50px;
   }
-  #form__editPerfil button {
+  #form__editPerfilAndContact button {
     margin-top: 0;
     width: 100px;
     border-radius: 15px;
@@ -1058,6 +1069,28 @@ ul {
 @media (max-width: 720px) {
   .form-group input {
     width: 150px;
+  }
+}
+
+/*CONTACT*/
+.helpContact {
+  margin-top: 15px;
+  margin-block-end: -55px;
+}
+.helpContact h2 {
+  margin-block-end: 25px;
+  border-bottom: solid 5px rgb(255, 255, 255);
+}
+.helpContact h3 {
+  margin-block-end: 25px;
+  border-bottom: solid 5px rgb(255, 255, 255);
+}
+.helpContact p {
+  text-align: justify;
+}
+@media (max-width: 720px) {
+  .helpContact {
+    margin-block-end: 10px;
   }
 }
 
