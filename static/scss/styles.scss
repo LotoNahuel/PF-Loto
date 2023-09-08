@@ -659,15 +659,10 @@ ul{
     @media (max-width:$maxWidth-Mobile){
         margin-top: 35px;
         margin-block-end: -60px;
-    }
-}
-.user__txt{
-    display: flex;
-    flex-direction: column;
-    margin-left: 15px;
-    p{
-        margin: 0;
-        width: 100%;
+        a{
+            display: flex;
+            align-items: start;
+        }
     }
 }
 .class__sup{
@@ -686,6 +681,15 @@ ul{
         p{
             text-align: justify;
         }
+    }
+}
+.user__txt{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    p{
+        margin: 0;
+        width: 100%;
     }
 }
 .scroll{
