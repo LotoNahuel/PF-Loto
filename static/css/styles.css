@@ -101,11 +101,11 @@ ul {
   margin-top: 15px;
 }
 .dropdown-content li:hover {
-  background: #153da1;
+  background: #c0c0c0;
   margin-left: 50px;
 }
 .dropdown-content li {
-  background: rgba(25, 53, 87, 0.8823529412);
+  background: rgba(143, 143, 143, 0.8823529412);
   border-radius: 15px;
   width: 350px;
   margin-top: 10px;
