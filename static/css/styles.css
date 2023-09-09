@@ -160,6 +160,33 @@ ul {
   display: block;
 }
 
+.button-menu {
+  transform: scale(var(--ggs, 2));
+}
+
+.button-menu,
+.button-menu::after,
+.button-menu::before {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.button-menu::after,
+.button-menu::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+}
+
+.button-menu::after {
+  top: 6px;
+}
+
 /*FOOTER*/
 .foot__complet {
   background-color: rgb(43, 43, 43);
