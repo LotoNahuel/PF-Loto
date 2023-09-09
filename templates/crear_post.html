@@ -56,26 +56,36 @@
         </ul>
     </nav>
 
-    <form action="" class="form__creation">
-        <div class="class__form_l">
-            <h3 class="class__titleForm">CREAR POST</h3>
-            <h3>ARCHIVO</h3>
-            <div class="class__formFile">
-                <label for="formFileLg" class="form-label"></label>
-                <input class="form-control form-control-lg" id="formFileLg" type="file">
-            </div>
-        </div>
-        <div class="class__formRight">
-            <H3>DESCRIPCION</H3>
-            <div class="form-group class__formTxt">
-                <label for="exampleFormControlTextarea1"></label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="8" placeholder="Agregar comentario..."></textarea>
+    <main>
+        <section id="form__editPerfilAndContact">
+            <form>
+                <div class="class__header">
+                    <h3>ARCHIVO:</h3>
+                    <div class="classImgCreationPost class__head">
+                        <img src="../static/assests/default-image.png" class="img-fluid" alt="avatar">
+                        <label for="formFileLg" class="form-label"></label>
+                        <input class="form-control form-control-lg" id="formFileLg" type="file">
+                    </div>
                 </div>
-                    <button type="submit" class="btn btn-primary">CREAR POST</button>
+                <div class="class__data">
+                    <h3>DATOS:</h3>
+                    <div class="form-group data__inf">
+                        <h4>TITULO</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                    </div>
+                    <div class="form-group data__inf">
+                        <h4>DESCRIPCION</h4>
+                        <label for="exampleFormControlTextarea1"></label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </form>
+                <div class="classBtn">
+                    <button type="submit" class="btn btn-primary">GUARDAR</button>
+                </div>
+              </form>
+        </section>
+    </main>
 
     <footer class="foot__complet">
         <div class="foot__left">

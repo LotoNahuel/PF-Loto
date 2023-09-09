@@ -6,7 +6,7 @@ $borderRadius: 15px;
 $MarginTopOrEnd: 15px;
 $borderRadiusAvatar: 100%;
 $solidBorder: solid 5px rgb(255, 255, 255);
-
+$colorFondo: rgb(73, 73, 73);
 /*ANIMACION IMG LINK*/
 a:hover{
     img{
@@ -19,7 +19,7 @@ a:hover{
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(24, 24, 24);
+    background-color: rgb(26, 26, 26);
 }
 li, a, h1, h2, h3, h4, p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -90,6 +90,11 @@ ul{
         }
         img{
             width: 40px;
+        }
+    }
+    @media (max-width:800px){
+        a{
+            font-size: 25px;
         }
     }
 }
@@ -190,17 +195,6 @@ ul{
     text-align: center;
     p{
         margin: 0;
-    }
-}
-/*FOOTER FORM*/
-.foot__form{
-    position: fixed;
-    width: 100%;
-    @media (max-width:$maxWidth-Mobile){
-        position: relative;
-    }
-    @media (min-width:$maxWidth-Mobile) and (max-width:1200px){
-        position: relative;
     }
 }
 
@@ -434,7 +428,7 @@ ul{
     }
 }
 .container__pub{
-    background-color: rgb(27, 32, 39);
+    background-color: $colorFondo;
     border-radius: $borderRadius;
     width: 90%;
     display: flex;
@@ -514,12 +508,12 @@ ul{
 }
 .post_2{
     border-radius: $borderRadius;
-    background-color: rgb(27, 32, 39);
+    background-color: $colorFondo;
 
 }
 .coment_style{
     border-radius: $borderRadius;
-    background-color: rgb(27, 32, 39);
+    background-color: $colorFondo;
 }
 .title_coment{
     padding-left: 15px;
@@ -554,91 +548,9 @@ ul{
     }
 }
 
-/*CREATION POST*/
-.form__creation{
-    margin-top: 205px;
-    margin-block-end: 160px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    @media (max-width:$maxWidth-Mobile){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 90px;
-        margin-block-end: 105px;
-        h3{
-            text-align: center;
-        }
-    }
-    @media (min-width:$maxWidth-Mobile) and (max-width:910px){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 90px;
-        margin-block-end: 105px;
-        h3{
-            text-align: center;
-        }
-    }
-    @media (min-width:910px) and (max-width:1200px){
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 90px;
-        margin-block-end: 105px;
-        h3{
-            text-align: center;
-        }
-    }
-}
-.class__formTxt{
-    width: 900px;
-    margin-block-end: $MarginTopOrEnd;
-    @media (max-width:$maxWidth-Mobile){
-        width: 300px;
-        margin-top: -15px;
-    }
-    @media (min-width:$maxWidth-Mobile) and (max-width:910px){
-        width: 650px;
-    }
-}
-.class__formFile{
-    input{
-        width: 900px;
-        height: 210px;
-    }
-    @media (max-width:$maxWidth-Mobile){
-        margin-block-end: 20px;
-        input{
-            width: 300px;
-            height: max-content;
-            margin-top: -15px;
-        }
-    }
-    @media (min-width:$maxWidth-Mobile) and (max-width:910px){
-        input{
-            width: 650px;
-        }
-    }
-}
-.class__titleForm{
-    margin-block-end: 50px;
-    border-bottom:$solidBorder;
-    @media (max-width:$maxWidth-Mobile){
-        margin-block-end: 50px;
-    }
-}
-.class__formRight{
-    margin-top: 88px;
-    @media (max-width:$maxWidth-Mobile){
-        margin-top: $MarginTopOrEnd;
-    }
-}
-
 /*MENSAJES*/
 #mensaje{
-    margin-top: 50px;
+    margin-top: 60px;
     margin-block-end: -55px;
     padding: 25px;
     display: flex;
@@ -671,7 +583,7 @@ ul{
     justify-content: space-between;
 }
 .class__bandeja{
-    background-color: rgb(27, 32, 39);
+    background-color: $colorFondo;
     border-radius: $borderRadius;
     padding-top: 1px;
     padding-block-end: 20px;
@@ -701,73 +613,64 @@ ul{
     }
 }
 
-/*NEW MSJ*/
-#new__msj{
-    margin-top: 165px;
-    margin-block-end: 185px;
-    padding: 50px;
+/*CHAT*/
+.userChat{
+    img{
+        margin-right: 15px;
+    }
+}
+.userChatLeft{
+    display: flex;
+    align-items: start;
+    margin: 15px;
+    padding: 10px;
+    background-color: #12265a9a;
+    border-radius: 15px;
+    img{
+        margin-right: 15px;
+    }
+    p{
+        text-align: justify;
+        max-width: 800px;
+    }
+}
+.userChatRight{
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    margin: 15px;
+    padding: 10px;
+    background-color: #12265a9a;
+    border-radius: 15px;
+    img{
+        margin-left: 15px;
+    }
+    p{
+        text-align: justify;
+        max-width: 800px;
+    }
+}
+.input__chat{
+    margin: 15px;
+    padding: 10px;
+    margin-top: -110px;
+    textarea{
+        border-radius: 15px;
+    }
+}
+.btnChat{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    @media (max-width:$maxWidth-Mobile){
-        margin-top: 40px;
-        margin-block-end: 25px;
-    }
-    @media (min-width:645px) and (max-width:720px){
-        margin-top: 50px;
-        margin-block-end: 35px;
-    }
-    @media (min-width:825px) and (max-width:1200px){
-        margin-top: 180px;
-        margin-block-end: 190px;
-    }
-}
-.form__msj{
-    padding: 15px;
-}
-.form__user{
-    width: 300px;
-    @media (max-width:$maxWidth-Mobile){
-        width: 280px;
-        margin-top: -20px;
-        margin-block-end: -20px;
-        position: relative;
-    }
-    @media (min-width:345px) and (max-width:720px){
-        width: 350px;
-    }
-}
-.form__msjTxt{
-    width: 1000px;
-    textarea{
-        margin-block-end: $MarginTopOrEnd;
-    }
-    @media (max-width:$maxWidth-Mobile){
-        width: 280px;
-        textarea{
-            height: 350px;
-        }
-    }
-    @media (min-width:345px) and (max-width:720px){
-        width: 350px;
-        textarea{
-            height: 395px;
-        }
-    }
-    @media (min-width:720px) and (max-width:1200px){
-        width: 650px;
-        textarea{
-            height: 210px;
-        }
-    }
+    align-items: end;
+    margin: 15px;
+    padding: 10px;
+    margin-top: -30px;
 }
 
 /*EDIT PERFIL*/
 #form__editPerfilAndContact{
     padding: 100px;
     img{
-        width: 200px;
         border-radius: $borderRadiusAvatar;
         background-color: white;
     }
@@ -779,10 +682,18 @@ ul{
     @media (max-width:$maxWidth-Mobile){
         padding: 15px;
         margin-top: 50px;
+        img{
+            width: 300px;
+        }
         button{
             margin-top: 0;
             width: 100px;
             border-radius: $borderRadius;
+        }
+    }
+    @media (min-width:721px){
+        img{
+            width: 200px;
         }
     }
 }
@@ -825,12 +736,11 @@ ul{
     }
     @media (min-width:$maxWidth-Mobile) and (max-width:1330px){
         display: flex;
-        align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         input{
+            margin-right: 0;
             width: 250px;
             height: 0;
-            
         }
     }
 }
@@ -967,56 +877,11 @@ ul{
     }
 }
 
-/*CHAT*/
-.userChat{
-    img{
-        margin-right: 15px;
+/*Creation Post*/
+#form__editPerfilAndContact{
+    .classImgCreationPost{
+        img{
+            border-radius: 15px;
+        }
     }
-}
-.userChatLeft{
-    display: flex;
-    align-items: start;
-    margin: 15px;
-    padding: 10px;
-    background-color: #12265a9a;
-    border-radius: 15px;
-    img{
-        margin-right: 15px;
-    }
-    p{
-        text-align: justify;
-        max-width: 800px;
-    }
-}
-.userChatRight{
-    display: flex;
-    align-items: start;
-    justify-content: end;
-    margin: 15px;
-    padding: 10px;
-    background-color: #12265a9a;
-    border-radius: 15px;
-    img{
-        margin-left: 15px;
-    }
-    p{
-        text-align: justify;
-        max-width: 800px;
-    }
-}
-.input__chat{
-    margin: 15px;
-    padding: 10px;
-    margin-top: -110px;
-    textarea{
-        border-radius: 15px;
-    }
-}
-.btnChat{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin: 15px;
-    padding: 10px;
-    margin-top: -30px;
 }

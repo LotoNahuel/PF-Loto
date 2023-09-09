@@ -56,31 +56,39 @@
         </ul>
     </nav>
 
-    <section id="new__msj">
-        <h3>NUEVO MENSAJE</h3>
-        <form class="form__msj">
-            <div class="col-auto form__user">
-                <label class="sr-only" for="inlineFormInputGroup"></label>
-                <div class="input-group mb-2">
-                    <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
-                    </div>
-                    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+    <main>
+        <section id="mensaje">
+            <div class="class__sup">
+                <div class="userChat">
+                    <form class="form__msj">
+                        <div class="col-auto form__user">
+                            <label class="sr-only" for="inlineFormInputGroup"></label>
+                            <div class="input-group mb-2">
+                                <div class="input-group-prepend">
+                                    <div class="input-group-text">@</div>
+                                </div>
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
-            <div class="form__msjTxt">
-                <div>
+            <div class="class__bandeja scroll">
+                
+            </div>
+        </section>
+        <section>
+            <form action="">
+                <div class="form-group input__chat">
                     <label for="exampleFormControlTextarea1"></label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Nuevo mensaje..."></textarea>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <div class="btnChat">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
-                    <a href="">
-                        <button type="submit" class="btn btn-primary">ENVIAR</button>
-                    </a>
-                </div>
-            </div>
-        </form>
-    </section>
+            </form>
+        </section>
+    </main>
     
     <footer class="foot__complet">
         <div class="foot__left">
