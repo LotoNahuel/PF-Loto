@@ -8,6 +8,7 @@ $borderRadiusAvatar: 100%;
 $solidBorder: solid 5px rgb(255, 255, 255);
 $colorFondo: #1f526b;
 $colorNavFooter: #090f13da;
+
 /*ANIMACION IMG LINK*/
 a:hover{
     img{
@@ -140,7 +141,7 @@ ul{
         margin-right: 1px;
         text-decoration: none;
     }
-    @media (max-width:$maxWidth-Mobile){
+    @media(max-width:$maxWidth-Mobile){
         right: -125px;
         a{
             font-size: 15px;
@@ -231,6 +232,12 @@ ul{
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
+    @media (min-width:1440px){
+        margin-top: 50px;
+    }
+    @media (min-width:$maxWidth-Mobile) and (max-width:1440px){
+        margin-top: 50px;
+    }
     @media (max-width:$maxWidth-Mobile){
         
         display: flex;
@@ -357,9 +364,13 @@ ul{
     }
     @media (min-width: $maxWidth-Mobile){
         padding: 5px;
+        margin-top: 15px;
         p{
             width: 120%;
         }
+    }
+    @media (min-width: $maxWidth-Mobile) and (max-width:850px){
+        margin-top: 70px;
     }
     @media (max-width: $maxWidth-Mobile){
         margin-top: 50px;
@@ -396,16 +407,9 @@ ul{
         font-size: 18px;
         text-decoration: underline;
     }
-    @media (min-width: $maxWidth-Mobile){
-        margin-top: 10px;
-        a{
-            font-size: 20px;
-        }
-    }
     @media (max-width: $maxWidth-Mobile){
-        margin-top: 5px;
         a{
-            font-size: 12px;
+            display: none;
         }
     }
 }
@@ -429,11 +433,19 @@ ul{
         width: 350px;
         overflow: hidden;
     }
+    @media (min-width: 1200px) and (max-width:1644px){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     @media (min-width: $maxWidth-Mobile) and (max-width:1200px){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin-top: $MarginTopOrEnd;
         margin-block-end: $MarginTopOrEnd;
+    }
+    @media (min-width: $maxWidth-Mobile) and (max-width:850px){
+        display: grid;
+        grid-template-columns: 1fr;
     }
     @media (max-width: $maxWidth-Mobile){
         display: grid;
@@ -544,6 +556,9 @@ ul{
     padding-left: 15px;
     margin-block-end: 10px;
     border-bottom:$solidBorder;
+    @media(max-width:$maxWidth-Mobile){
+        margin-top: 15px;
+    }
 }
 .title_coment h3{
     margin-block-end: 0;
@@ -570,6 +585,15 @@ ul{
     }
     @media (min-width:900px) and (max-width:1200px){
         height: 300px;
+    }
+    @media (min-width:1200px) and (max-width:1400px){
+        height: 300px;
+    }
+    @media (min-width:1400px) and (max-width:1600px){
+        height: 370px;
+    }
+    @media (min-width:1600px) and (max-width:1800px){
+        height: 370px;
     }
 }
 
@@ -606,6 +630,11 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media(max-width:420px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .searchPerfilMsj{
     margin-block-end: 30px;
@@ -651,7 +680,13 @@ ul{
 }
 
 /*CHAT*/
+.chatUsername{
+    display: flex;
+    align-items: start;
+}
 .userChat{
+    display: flex;
+    align-items: start;
     img{
         margin-right: 15px;
     }
