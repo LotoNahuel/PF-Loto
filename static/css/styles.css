@@ -7,12 +7,12 @@ a:hover img {
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(26, 26, 26);
+  background-color: #0d161b;
 }
 
 li, a, h1, h2, h3, h4, p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(255, 255, 255);
+  color: white;
   text-decoration: none;
   list-style: none;
 }
@@ -21,10 +21,11 @@ li, a, h1, h2, h3, h4, p {
 .nav__complet li a:hover {
   overflow: hidden;
   transform: scale(1.2);
+  color: white;
 }
 
 ul {
-  background-color: rgba(43, 43, 43, 0.493);
+  background-color: rgba(7, 11, 14, 0.8549019608);
   top: 0;
   left: 0;
   right: 0;
@@ -101,11 +102,11 @@ ul {
   margin-top: 15px;
 }
 .dropdown-content li:hover {
-  background: #c0c0c0;
+  background: rgba(0, 171, 228, 0.8980392157);
   margin-left: 50px;
 }
 .dropdown-content li {
-  background: rgba(143, 143, 143, 0.8823529412);
+  background: rgba(25, 138, 186, 0.7725490196);
   border-radius: 15px;
   width: 350px;
   margin-top: 10px;
@@ -189,7 +190,7 @@ ul {
 
 /*FOOTER*/
 .foot__complet {
-  background-color: rgb(43, 43, 43);
+  background-color: rgba(7, 11, 14, 0.8549019608);
   display: flex;
   justify-content: space-around;
   align-items: end;
@@ -200,6 +201,7 @@ ul {
 .foot__complet a {
   text-decoration: underline;
   font-size: 20px;
+  color: white;
 }
 @media (max-width: 720px) {
   .foot__complet {
@@ -227,8 +229,7 @@ ul {
 
 /*STYLE PORT*/
 .art__complet {
-  margin-top: 80px;
-  background-color: rgb(20, 20, 20);
+  background-color: #080e11;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
@@ -236,7 +237,6 @@ ul {
 }
 @media (max-width: 720px) {
   .art__complet {
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
   }
@@ -273,7 +273,7 @@ ul {
 @media (max-width: 720px) {
   .art__left h1 {
     font-size: 35px;
-    margin-top: 10px;
+    margin-top: 50px;
     margin-block-end: -15px;
   }
 }
@@ -336,8 +336,7 @@ ul {
 
 /*PERFIL*/
 .class__container {
-  background-color: rgb(20, 20, 20);
-  margin-top: 80px;
+  background-color: #080e11;
   display: flex;
   align-items: center;
 }
@@ -347,9 +346,6 @@ ul {
   background-color: white;
 }
 @media (max-width: 1700px) {
-  .class__container {
-    margin-top: 50px;
-  }
   .class__container img {
     width: 100px;
   }
@@ -364,6 +360,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 50px;
   padding: 50px;
 }
 @media (max-width: 720px) {
@@ -391,6 +388,7 @@ ul {
 }
 @media (max-width: 720px) {
   .right__info {
+    margin-top: 50px;
     padding: 10px;
   }
   .right__info h3 {
@@ -491,7 +489,7 @@ ul {
 }
 
 .container__pub {
-  background-color: rgb(73, 73, 73);
+  background-color: #1f526b;
   border-radius: 15px;
   width: 90%;
   display: flex;
@@ -587,12 +585,12 @@ ul {
 
 .post_2 {
   border-radius: 15px;
-  background-color: rgb(73, 73, 73);
+  background-color: #1f526b;
 }
 
 .coment_style {
   border-radius: 15px;
-  background-color: rgb(73, 73, 73);
+  background-color: #1f526b;
 }
 
 .title_coment {
@@ -677,8 +675,21 @@ ul {
   justify-content: space-between;
 }
 
+.searchPerfilMsj {
+  margin-block-end: 30px;
+}
+.searchPerfilMsj form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.searchPerfilMsj button {
+  margin-left: 15px;
+  margin-top: 25px;
+}
+
 .class__bandeja {
-  background-color: rgb(73, 73, 73);
+  background-color: #1f526b;
   border-radius: 15px;
   padding-top: 1px;
   padding-block-end: 20px;
@@ -722,7 +733,7 @@ ul {
   align-items: start;
   margin: 15px;
   padding: 10px;
-  background-color: rgba(18, 38, 90, 0.6039215686);
+  background-color: #198bba;
   border-radius: 15px;
 }
 .userChatLeft img {
@@ -739,7 +750,7 @@ ul {
   justify-content: end;
   margin: 15px;
   padding: 10px;
-  background-color: rgba(18, 38, 90, 0.6039215686);
+  background-color: #198bba;
   border-radius: 15px;
 }
 .userChatRight img {

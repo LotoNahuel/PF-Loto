@@ -6,7 +6,8 @@ $borderRadius: 15px;
 $MarginTopOrEnd: 15px;
 $borderRadiusAvatar: 100%;
 $solidBorder: solid 5px rgb(255, 255, 255);
-$colorFondo: rgb(73, 73, 73);
+$colorFondo: #1f526b;
+$colorNavFooter: #070b0eda;
 /*ANIMACION IMG LINK*/
 a:hover{
     img{
@@ -19,11 +20,11 @@ a:hover{
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(26, 26, 26);
+    background-color: #0d161b;
 }
 li, a, h1, h2, h3, h4, p{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     list-style: none;
 }
@@ -35,11 +36,12 @@ li, a, h1, h2, h3, h4, p{
         a:hover{
             overflow: hidden;
             transform: scale(1.2);
+            color: white;
         }
     }
 }
 ul{
-    background-color: rgba(43, 43, 43, 0.493);
+    background-color: $colorNavFooter;
     top: 0;
     left: 0;
     right: 0;
@@ -110,11 +112,11 @@ ul{
     margin-left: 200px;
     margin-top: 15px;
     li:hover{
-        background: #c0c0c0;
+        background: #00abe4e5;
         margin-left: 50px;
     }
     li{
-        background: #8f8f8fe1;
+        background: #198abac5;
         border-radius: $borderRadius;
         width: 350px;
         margin-top: 10px;
@@ -189,7 +191,7 @@ ul{
 
 /*FOOTER*/
 .foot__complet{
-    background-color: rgb(43, 43, 43);
+    background-color: $colorNavFooter;
     display: flex;
     justify-content: space-around;
     align-items: end;
@@ -199,6 +201,7 @@ ul{
     a{
         text-decoration: underline;
         font-size: 20px;
+        color: white;
     }
     @media (max-width:$maxWidth-Mobile){
         display: flex;
@@ -223,14 +226,13 @@ ul{
 
 /*STYLE PORT*/
 .art__complet{
-    margin-top: $desktopTop;
-    background-color: rgb(20, 20, 20);
+    background-color: #080e11;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
     @media (max-width:$maxWidth-Mobile){
-        margin-top: $mobileTop;
+        
         display: flex;
         flex-direction: column;
     }
@@ -255,7 +257,7 @@ ul{
     font-size: 80px;
     @media (max-width:$maxWidth-Mobile){
         font-size: 35px;
-        margin-top: 10px;
+        margin-top: 50px;
         margin-block-end: -15px;
     }
     @media (max-width:$minWidth){
@@ -316,8 +318,7 @@ ul{
 
 /*PERFIL*/
 .class__container{
-    background-color: rgb(20, 20, 20);
-    margin-top: $desktopTop;
+    background-color: #080e11;
     display: flex;
     align-items: center;
     img{
@@ -326,7 +327,6 @@ ul{
         background-color: white;
     }
     @media (max-width: $minWidth){
-        margin-top: 50px;
         img{
             width: 100px;
         }
@@ -341,6 +341,7 @@ ul{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
     padding: 50px;
     @media (max-width: $maxWidth-Mobile){
         padding: 10px;
@@ -361,6 +362,7 @@ ul{
         }
     }
     @media (max-width: $maxWidth-Mobile){
+        margin-top: 50px;
         padding: 10px;
         h3{
             font-size: 20px;
@@ -605,6 +607,18 @@ ul{
     align-items: center;
     justify-content: space-between;
 }
+.searchPerfilMsj{
+    margin-block-end: 30px;
+    form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    button{
+        margin-left: 15px;
+        margin-top: 25px;
+    }
+}
 .class__bandeja{
     background-color: $colorFondo;
     border-radius: $borderRadius;
@@ -647,7 +661,7 @@ ul{
     align-items: start;
     margin: 15px;
     padding: 10px;
-    background-color: #12265a9a;
+    background-color: #198bba;
     border-radius: 15px;
     img{
         margin-right: 15px;
@@ -663,7 +677,7 @@ ul{
     justify-content: end;
     margin: 15px;
     padding: 10px;
-    background-color: #12265a9a;
+    background-color: #198bba;
     border-radius: 15px;
     img{
         margin-left: 15px;
