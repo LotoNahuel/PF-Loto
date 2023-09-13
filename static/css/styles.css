@@ -288,12 +288,7 @@ ul {
   }
 }
 @media (min-width: 250px) and (max-width: 500px) {
-  .art__complet {
-    display: flex;
-    justify-content: flex-start;
-  }
   .art__complet h1 {
-    margin-top: 150px;
     font-size: 40px;
   }
   .art__complet h2 {
