@@ -308,25 +308,43 @@ ul{
     h2{
         font-size: 50px;
     }
-    @media (max-width:$maxWidth-Mobile){
-        h2, p{
-            margin-left: 0;
-            width: 100%;
-            text-align: center;
-        }
-        p{
-            font-size: 15px;
-        }
-    }
     @media (max-width:$minWidth){
         h2, p{
             margin-left: 10px;
+        }
+        h2{
+            font-size: 40px;
         }
     }
     @media (max-width:991px){
         h2, p{
             text-align: center;
             margin: 0;
+        }
+        h2{
+            font-size: 35px;
+        }
+    }
+    @media (max-width:$maxWidth-Mobile){
+        h2, p{
+            margin-left: 0;
+            width: 100%;
+            text-align: center;
+        }
+        h2{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    @media (max-width:500px){
+        h2, p{
+            text-align: center;
+            margin: 0;
+        }
+        h2{
+            font-size: 25px;
         }
     }
 }

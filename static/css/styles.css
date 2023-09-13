@@ -309,25 +309,43 @@ ul {
 .class__txt h2 {
   font-size: 50px;
 }
-@media (max-width: 720px) {
-  .class__txt h2, .class__txt p {
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .class__txt p {
-    font-size: 15px;
-  }
-}
 @media (max-width: 1700px) {
   .class__txt h2, .class__txt p {
     margin-left: 10px;
+  }
+  .class__txt h2 {
+    font-size: 40px;
   }
 }
 @media (max-width: 991px) {
   .class__txt h2, .class__txt p {
     text-align: center;
     margin: 0;
+  }
+  .class__txt h2 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 720px) {
+  .class__txt h2, .class__txt p {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .class__txt h2 {
+    font-size: 25px;
+  }
+  .class__txt p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  .class__txt h2, .class__txt p {
+    text-align: center;
+    margin: 0;
+  }
+  .class__txt h2 {
+    font-size: 25px;
   }
 }
 
