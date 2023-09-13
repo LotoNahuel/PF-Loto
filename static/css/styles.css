@@ -287,6 +287,18 @@ ul {
     font-size: 25px;
   }
 }
+@media (min-width: 250px) and (max-width: 500px) {
+  .art__complet h1 {
+    font-size: 40px;
+  }
+  .art__complet h2 {
+    font-size: 30px;
+  }
+  .art__complet p {
+    width: 300px;
+    font-size: 18px;
+  }
+}
 
 /*STYLE ART*/
 .class__txt h2, .class__txt p {
