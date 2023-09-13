@@ -228,47 +228,76 @@ ul{
 /*STYLE PORT*/
 .art__complet{
     background-color: #111d24;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    @media (min-width:1440px){
-        margin-top: 50px;
+    justify-content: center;
+    h1{
+        font-size: 100px;
+        font-weight: 900;
+        text-align: center;
+        margin: 15px;
     }
-    @media (min-width:$maxWidth-Mobile) and (max-width:1440px){
-        margin-top: 50px;
+    h2{
+        text-align: center;
+        font-size: 50px;
     }
-    @media (max-width:$maxWidth-Mobile){
-        
+    p{
+        text-align: center;
+        font-size: 25px;
+        width: 800px;
+    }
+    video{
+        position: absolute;
+        z-index: -1;
+        opacity: 50%;
+    }
+    @media(max-width:$minWidth){
+        h1{
+            font-size: 80px;
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            font-size: 25px;
+        }
+    }
+    @media(min-width:$maxWidth-Mobile){
+        p{
+            width: 700px;
+        }
+    }
+    @media(max-width:$maxWidth-Mobile){
+        h1{
+            font-size: 80px;
+        }
+        h2{
+            font-size: 50px;
+        }
+        p{
+            width: 500px;
+            font-size: 25px;
+        }
+    }
+    @media(min-width:250px) and (max-width:500px){
         display: flex;
-        flex-direction: column;
-    }
-    @media (max-width:$minWidth){
-        display: flex;
-        justify-content: center;
-    }
-}
-.art__right img{
-    width: 1200px;
-    @media (max-width:$maxWidth-Mobile){
-        width: 300px;
-    }
-    @media (max-width:$minWidth){
-        width: 450px;
-    }
-    @media (max-width:440px){
-        width: 300px;
-    }
-}
-.art__left h1{
-    font-size: 80px;
-    @media (max-width:$maxWidth-Mobile){
-        font-size: 35px;
-        margin-top: 50px;
-        margin-block-end: -15px;
-    }
-    @media (max-width:$minWidth){
-        font-size: 40px;
+        justify-content: flex-start;
+        h1{
+            margin-top: 150px;
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        p{
+            width: 300px;
+            font-size: 18px;
+        }
     }
 }
 
@@ -278,6 +307,9 @@ ul{
         width: 95%;
         text-align: justify;
         margin-left: 25px;
+    }
+    h2{
+        font-size: 50px;
     }
     @media (max-width:$maxWidth-Mobile){
         h2, p{
