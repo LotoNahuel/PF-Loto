@@ -436,16 +436,19 @@ ul{
     @media (min-width: 1200px) and (max-width:1644px){
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        p{
+            width: 300px;
+        }
     }
     @media (min-width: $maxWidth-Mobile) and (max-width:1200px){
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        margin-top: $MarginTopOrEnd;
-        margin-block-end: $MarginTopOrEnd;
+        margin: 0px;
     }
     @media (min-width: $maxWidth-Mobile) and (max-width:850px){
-        display: grid;
-        grid-template-columns: 1fr;
+        p{
+            width: 250px;
+        }
     }
     @media (max-width: $maxWidth-Mobile){
         display: grid;
@@ -460,7 +463,7 @@ ul{
             font-size: 15px;
             margin: 0;
             margin-right: 20px;
-            width: 300px;
+            width: 250px;
         }
     }
 }
@@ -538,15 +541,17 @@ ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 15px;
+    align-items: center;
     @media (max-width:$maxWidth-Mobile){
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }
 .post_2{
     border-radius: $borderRadius;
     background-color: $colorFondo;
-
+    height: max-content;
 }
 .coment_style{
     border-radius: $borderRadius;
@@ -574,7 +579,7 @@ ul{
     padding-left: 1px;
 }
 .scroll-container{
-    height: 430px;
+    height: 450px;
     overflow-y: scroll;
     scroll-behavior: smooth;
     @media (max-width:$maxWidth-Mobile){
@@ -630,7 +635,7 @@ ul{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @media(max-width:420px){
+    @media(max-width:380px){
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -723,20 +728,23 @@ ul{
     }
 }
 .input__chat{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin: 15px;
+    margin-top: -80px;
     padding: 10px;
-    margin-top: -110px;
     textarea{
         border-radius: 15px;
+        width: 1750px;
+        margin-right: 20px;
     }
-}
-.btnChat{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    margin: 15px;
-    padding: 10px;
-    margin-top: -30px;
+    button{
+        width: 100px;
+        height: 85px;
+        border-radius: 15px;
+    }
+
 }
 
 /*EDIT PERFIL*/
@@ -911,10 +919,6 @@ ul{
         }
         h4{
             font-size: 15px;
-        }
-        button{
-            width: 90px;
-            border-radius: 20px;
         }
     }
 }
