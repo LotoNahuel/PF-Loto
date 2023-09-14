@@ -161,13 +161,13 @@ ul{
 }
 .dropdown{
     position: relative;
-    display: inline-block;
+    display: none;
 }
 .dropdown:hover .dropdown-content{
     display: block;
 }
 .button-menu {
-    transform: scale(var(--ggs,2))
+    transform: scale(var(--ggs,2));
 }
 .button-menu,
 .button-menu::after,
@@ -184,10 +184,10 @@ ul{
 .button-menu::before {
     content: "";
     position: absolute;
-    top: -6px
+    top: -6px;
 }
 .button-menu::after {
-    top: 6px
+    top: 6px;
 }
 
 /*FOOTER*/
