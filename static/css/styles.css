@@ -4,6 +4,7 @@ a:hover img {
   transform: scale(1.1);
 }
 
+/*STYLE GENERIC*/
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +16,10 @@ li, a, h1, h2, h3, h4, p {
   color: white;
   text-decoration: none;
   list-style: none;
+}
+
+.btn {
+  color: white;
 }
 
 /*STYLE NAV*/
@@ -258,6 +263,10 @@ ul {
   position: absolute;
   z-index: -1;
   opacity: 50%;
+}
+.art__complet button {
+  border-radius: 30px;
+  font-size: 20px;
 }
 @media (max-width: 1700px) {
   .art__complet h1 {
